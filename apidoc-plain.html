@@ -1,3 +1,8 @@
+  <h4><a href='#orders'>Orders</a></h4>
+  <ul>
+      <li><a href='#orders-index'>index</a></li>
+      <li><a href='#orders-show'>show</a></li>
+  </ul>
   <h4><a href='#tickers'>Tickers</a></h4>
   <ul>
       <li><a href='#tickers-index'>index</a></li>
@@ -5,6 +10,84 @@
   </ul>
 
 
+
+  <hr/>
+
+  <div>
+    <h2 id="orders">
+      <a href='#orders'>Orders</a><br>
+      <small></small>
+    </h2>
+  </div>
+
+
+  <div>
+
+      <hr/>
+
+      <h3 id="orders-index">
+      <a href='#orders'>Orders</a> / <a href='#orders-index'>index</a>
+      </h3>
+
+      <div>
+          <h4>
+              GET /api/tickers/:ticker_id/orders
+            <br>
+            <small></small>
+          </h4>
+      </div>
+
+      <div>
+        
+          <h4>Examples</h4>
+            <pre class="wiki">GET /api/tickers/TREX/orders
+200
+[
+  {
+    &quot;ticker_id&quot;: 1,
+    &quot;id&quot;: 1,
+    &quot;side&quot;: &quot;buy&quot;,
+    &quot;quantity&quot;: 100,
+    &quot;price&quot;: 4505,
+    &quot;created_at&quot;: &quot;2015-03-06T18:59:12.000Z&quot;,
+    &quot;updated_at&quot;: &quot;2015-03-06T18:59:12.000Z&quot;
+  }
+]</pre>
+
+
+      </div>
+      <hr/>
+
+      <h3 id="orders-show">
+      <a href='#orders'>Orders</a> / <a href='#orders-show'>show</a>
+      </h3>
+
+      <div>
+          <h4>
+              GET /api/tickers/:ticker_id/orders/:id
+            <br>
+            <small></small>
+          </h4>
+      </div>
+
+      <div>
+        
+          <h4>Examples</h4>
+            <pre class="wiki">GET /api/tickers/TREX/orders/1
+200
+{
+  &quot;ticker_id&quot;: 1,
+  &quot;id&quot;: 1,
+  &quot;side&quot;: &quot;buy&quot;,
+  &quot;quantity&quot;: 100,
+  &quot;price&quot;: 4505,
+  &quot;created_at&quot;: &quot;2015-03-06T18:59:12.000Z&quot;,
+  &quot;updated_at&quot;: &quot;2015-03-06T18:59:12.000Z&quot;
+}</pre>
+
+
+      </div>
+  </div>
 
   <hr/>
 
@@ -39,18 +122,18 @@
 200
 [
   {
-    &quot;id&quot;: 298486374,
-    &quot;name&quot;: &quot;MRDR&quot;,
-    &quot;description&quot;: &quot;Visit Mordor&quot;,
-    &quot;created_at&quot;: &quot;2015-03-06T18:23:51.000Z&quot;,
-    &quot;updated_at&quot;: &quot;2015-03-06T18:23:51.000Z&quot;
-  },
-  {
-    &quot;id&quot;: 980190962,
+    &quot;id&quot;: 1,
     &quot;name&quot;: &quot;TREX&quot;,
     &quot;description&quot;: &quot;T-Rex tries yoga&quot;,
-    &quot;created_at&quot;: &quot;2015-03-06T18:23:51.000Z&quot;,
-    &quot;updated_at&quot;: &quot;2015-03-06T18:23:51.000Z&quot;
+    &quot;created_at&quot;: &quot;2015-03-06T18:59:12.000Z&quot;,
+    &quot;updated_at&quot;: &quot;2015-03-06T18:59:12.000Z&quot;
+  },
+  {
+    &quot;id&quot;: 2,
+    &quot;name&quot;: &quot;MRDR&quot;,
+    &quot;description&quot;: &quot;Visit Mordor&quot;,
+    &quot;created_at&quot;: &quot;2015-03-06T18:59:12.000Z&quot;,
+    &quot;updated_at&quot;: &quot;2015-03-06T18:59:12.000Z&quot;
   }
 ]</pre>
 
@@ -76,11 +159,11 @@
             <pre class="wiki">GET /api/tickers/TREX
 200
 {
-  &quot;id&quot;: 980190962,
+  &quot;id&quot;: 1,
   &quot;name&quot;: &quot;TREX&quot;,
   &quot;description&quot;: &quot;T-Rex tries yoga&quot;,
-  &quot;created_at&quot;: &quot;2015-03-06T18:23:51.000Z&quot;,
-  &quot;updated_at&quot;: &quot;2015-03-06T18:23:51.000Z&quot;
+  &quot;created_at&quot;: &quot;2015-03-06T18:59:12.000Z&quot;,
+  &quot;updated_at&quot;: &quot;2015-03-06T18:59:12.000Z&quot;
 }</pre>
 
 

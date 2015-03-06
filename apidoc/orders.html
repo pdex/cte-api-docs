@@ -22,7 +22,7 @@
     <span class='divider'>/</span>
   </li>
   <li class='active'>
-    Tickers
+    Orders
     
   </li>
   
@@ -30,7 +30,7 @@
 
 <div class='page-header'>
   <h1>
-    Tickers
+    Orders
     <br>
     <small></small>
   </h1>
@@ -43,7 +43,7 @@
 
     <hr>
     <div class='pull-right small'>
-      <a href='../apidoc/tickers/index.html'> >>> </a>
+      <a href='../apidoc/orders/index.html'> >>> </a>
     </div>
     <div>
         <h2>
@@ -51,7 +51,7 @@
            class='accordion-toggle'
            data-toggle='collapse'
            data-parent='#accordion'>
-            GET /api/tickers
+            GET /api/tickers/:ticker_id/orders
           </a>
           <br>
           <small></small>
@@ -66,20 +66,15 @@
 
 
   <h3>Examples</h3>
-    <pre class="prettyprint">GET /api/tickers
+    <pre class="prettyprint">GET /api/tickers/TREX/orders
 200
 [
   {
+    &quot;ticker_id&quot;: 1,
     &quot;id&quot;: 1,
-    &quot;name&quot;: &quot;TREX&quot;,
-    &quot;description&quot;: &quot;T-Rex tries yoga&quot;,
-    &quot;created_at&quot;: &quot;2015-03-06T18:59:12.000Z&quot;,
-    &quot;updated_at&quot;: &quot;2015-03-06T18:59:12.000Z&quot;
-  },
-  {
-    &quot;id&quot;: 2,
-    &quot;name&quot;: &quot;MRDR&quot;,
-    &quot;description&quot;: &quot;Visit Mordor&quot;,
+    &quot;side&quot;: &quot;buy&quot;,
+    &quot;quantity&quot;: 100,
+    &quot;price&quot;: 4505,
     &quot;created_at&quot;: &quot;2015-03-06T18:59:12.000Z&quot;,
     &quot;updated_at&quot;: &quot;2015-03-06T18:59:12.000Z&quot;
   }
@@ -89,7 +84,7 @@
     </div>
     <hr>
     <div class='pull-right small'>
-      <a href='../apidoc/tickers/show.html'> >>> </a>
+      <a href='../apidoc/orders/show.html'> >>> </a>
     </div>
     <div>
         <h2>
@@ -97,7 +92,7 @@
            class='accordion-toggle'
            data-toggle='collapse'
            data-parent='#accordion'>
-            GET /api/tickers/:id
+            GET /api/tickers/:ticker_id/orders/:id
           </a>
           <br>
           <small></small>
@@ -112,12 +107,14 @@
 
 
   <h3>Examples</h3>
-    <pre class="prettyprint">GET /api/tickers/TREX
+    <pre class="prettyprint">GET /api/tickers/TREX/orders/1
 200
 {
+  &quot;ticker_id&quot;: 1,
   &quot;id&quot;: 1,
-  &quot;name&quot;: &quot;TREX&quot;,
-  &quot;description&quot;: &quot;T-Rex tries yoga&quot;,
+  &quot;side&quot;: &quot;buy&quot;,
+  &quot;quantity&quot;: 100,
+  &quot;price&quot;: 4505,
   &quot;created_at&quot;: &quot;2015-03-06T18:59:12.000Z&quot;,
   &quot;updated_at&quot;: &quot;2015-03-06T18:59:12.000Z&quot;
 }</pre>

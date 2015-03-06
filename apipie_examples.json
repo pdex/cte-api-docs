@@ -1,4 +1,52 @@
 {
+  "orders#index": [
+    {
+      "verb": "GET",
+      "path": "/api/tickers/TREX/orders",
+      "versions": [
+        "1.0"
+      ],
+      "query": "",
+      "request_data": null,
+      "response_data": [
+        {
+          "ticker_id": 1,
+          "id": 1,
+          "side": "buy",
+          "quantity": 100,
+          "price": 4505,
+          "created_at": "2015-03-06T18:59:12.000Z",
+          "updated_at": "2015-03-06T18:59:12.000Z"
+        }
+      ],
+      "code": "200",
+      "show_in_doc": 1,
+      "recorded": true
+    }
+  ],
+  "orders#show": [
+    {
+      "verb": "GET",
+      "path": "/api/tickers/TREX/orders/1",
+      "versions": [
+        "1.0"
+      ],
+      "query": "",
+      "request_data": null,
+      "response_data": {
+        "ticker_id": 1,
+        "id": 1,
+        "side": "buy",
+        "quantity": 100,
+        "price": 4505,
+        "created_at": "2015-03-06T18:59:12.000Z",
+        "updated_at": "2015-03-06T18:59:12.000Z"
+      },
+      "code": "200",
+      "show_in_doc": 1,
+      "recorded": true
+    }
+  ],
   "tickers#index": [
     {
       "verb": "GET",
@@ -10,18 +58,18 @@
       "request_data": null,
       "response_data": [
         {
-          "id": 298486374,
-          "name": "MRDR",
-          "description": "Visit Mordor",
-          "created_at": "2015-03-06T18:23:51.000Z",
-          "updated_at": "2015-03-06T18:23:51.000Z"
-        },
-        {
-          "id": 980190962,
+          "id": 1,
           "name": "TREX",
           "description": "T-Rex tries yoga",
-          "created_at": "2015-03-06T18:23:51.000Z",
-          "updated_at": "2015-03-06T18:23:51.000Z"
+          "created_at": "2015-03-06T18:59:12.000Z",
+          "updated_at": "2015-03-06T18:59:12.000Z"
+        },
+        {
+          "id": 2,
+          "name": "MRDR",
+          "description": "Visit Mordor",
+          "created_at": "2015-03-06T18:59:12.000Z",
+          "updated_at": "2015-03-06T18:59:12.000Z"
         }
       ],
       "code": "200",
@@ -39,11 +87,11 @@
       "query": "",
       "request_data": null,
       "response_data": {
-        "id": 980190962,
+        "id": 1,
         "name": "TREX",
         "description": "T-Rex tries yoga",
-        "created_at": "2015-03-06T18:23:51.000Z",
-        "updated_at": "2015-03-06T18:23:51.000Z"
+        "created_at": "2015-03-06T18:59:12.000Z",
+        "updated_at": "2015-03-06T18:59:12.000Z"
       },
       "code": "200",
       "show_in_doc": 1,
