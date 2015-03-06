@@ -1,0 +1,88 @@
+  <h4><a href='#tickers'>Tickers</a></h4>
+  <ul>
+      <li><a href='#tickers-index'>index</a></li>
+      <li><a href='#tickers-show'>show</a></li>
+  </ul>
+
+
+
+  <hr/>
+
+  <div>
+    <h2 id="tickers">
+      <a href='#tickers'>Tickers</a><br>
+      <small></small>
+    </h2>
+  </div>
+
+
+  <div>
+
+      <hr/>
+
+      <h3 id="tickers-index">
+      <a href='#tickers'>Tickers</a> / <a href='#tickers-index'>index</a>
+      </h3>
+
+      <div>
+          <h4>
+              GET /tickers
+            <br>
+            <small></small>
+          </h4>
+      </div>
+
+      <div>
+        
+          <h4>Examples</h4>
+            <pre class="wiki">GET /tickers
+200
+[
+  {
+    &quot;id&quot;: 298486374,
+    &quot;name&quot;: &quot;MyString&quot;,
+    &quot;description&quot;: &quot;MyString&quot;,
+    &quot;created_at&quot;: &quot;2015-03-06T16:31:56.000Z&quot;,
+    &quot;updated_at&quot;: &quot;2015-03-06T16:31:56.000Z&quot;
+  },
+  {
+    &quot;id&quot;: 980190962,
+    &quot;name&quot;: &quot;MyString&quot;,
+    &quot;description&quot;: &quot;MyString&quot;,
+    &quot;created_at&quot;: &quot;2015-03-06T16:31:56.000Z&quot;,
+    &quot;updated_at&quot;: &quot;2015-03-06T16:31:56.000Z&quot;
+  }
+]</pre>
+
+
+      </div>
+      <hr/>
+
+      <h3 id="tickers-show">
+      <a href='#tickers'>Tickers</a> / <a href='#tickers-show'>show</a>
+      </h3>
+
+      <div>
+          <h4>
+              GET /tickers/:id
+            <br>
+            <small></small>
+          </h4>
+      </div>
+
+      <div>
+        
+          <h4>Examples</h4>
+            <pre class="wiki">GET /tickers/980190962
+200
+{
+  &quot;id&quot;: 980190962,
+  &quot;name&quot;: &quot;MyString&quot;,
+  &quot;description&quot;: &quot;MyString&quot;,
+  &quot;created_at&quot;: &quot;2015-03-06T16:31:56.000Z&quot;,
+  &quot;updated_at&quot;: &quot;2015-03-06T16:31:56.000Z&quot;
+}</pre>
+
+
+      </div>
+  </div>
