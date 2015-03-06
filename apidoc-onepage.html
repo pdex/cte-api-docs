@@ -61,7 +61,7 @@
       <div>
           <h3>
             <a href='#tickers-index'>
-              GET /tickers
+              GET /api/tickers
             </a><br>
             <small></small>
           </h3>
@@ -70,22 +70,22 @@
       <div>
         
           <h2>Examples</h2>
-            <pre>GET /tickers
+            <pre>GET /api/tickers
 200
 [
   {
     &quot;id&quot;: 298486374,
-    &quot;name&quot;: &quot;MyString&quot;,
-    &quot;description&quot;: &quot;MyString&quot;,
-    &quot;created_at&quot;: &quot;2015-03-06T16:31:56.000Z&quot;,
-    &quot;updated_at&quot;: &quot;2015-03-06T16:31:56.000Z&quot;
+    &quot;name&quot;: &quot;MRDR&quot;,
+    &quot;description&quot;: &quot;Visit Mordor&quot;,
+    &quot;created_at&quot;: &quot;2015-03-06T18:23:51.000Z&quot;,
+    &quot;updated_at&quot;: &quot;2015-03-06T18:23:51.000Z&quot;
   },
   {
     &quot;id&quot;: 980190962,
-    &quot;name&quot;: &quot;MyString&quot;,
-    &quot;description&quot;: &quot;MyString&quot;,
-    &quot;created_at&quot;: &quot;2015-03-06T16:31:56.000Z&quot;,
-    &quot;updated_at&quot;: &quot;2015-03-06T16:31:56.000Z&quot;
+    &quot;name&quot;: &quot;TREX&quot;,
+    &quot;description&quot;: &quot;T-Rex tries yoga&quot;,
+    &quot;created_at&quot;: &quot;2015-03-06T18:23:51.000Z&quot;,
+    &quot;updated_at&quot;: &quot;2015-03-06T18:23:51.000Z&quot;
   }
 ]</pre>
 
@@ -108,7 +108,7 @@
       <div>
           <h3>
             <a href='#tickers-show'>
-              GET /tickers/:id
+              GET /api/tickers/:id
             </a><br>
             <small></small>
           </h3>
@@ -117,14 +117,14 @@
       <div>
         
           <h2>Examples</h2>
-            <pre>GET /tickers/980190962
+            <pre>GET /api/tickers/TREX
 200
 {
   &quot;id&quot;: 980190962,
-  &quot;name&quot;: &quot;MyString&quot;,
-  &quot;description&quot;: &quot;MyString&quot;,
-  &quot;created_at&quot;: &quot;2015-03-06T16:31:56.000Z&quot;,
-  &quot;updated_at&quot;: &quot;2015-03-06T16:31:56.000Z&quot;
+  &quot;name&quot;: &quot;TREX&quot;,
+  &quot;description&quot;: &quot;T-Rex tries yoga&quot;,
+  &quot;created_at&quot;: &quot;2015-03-06T18:23:51.000Z&quot;,
+  &quot;updated_at&quot;: &quot;2015-03-06T18:23:51.000Z&quot;
 }</pre>
 
 
